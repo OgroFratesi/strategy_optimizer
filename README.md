@@ -1,8 +1,8 @@
 # STRATEGY OPTIMIZATION
 
-## The scope of this project is to look for a faster way of optimizing a trading strategy. Backtrader packege contains a module where given a range of values for each indicator, the strategy would run each possible combination. In this way, one can obtain the best combinations of parameters. BUT when there are more than few indicators, each with a range of different values, running ALL possible combinations is slow and expensie. This is way the main goal is divided in two parts. 
-## The first one is to look for a way of optimizing the way of running each combination, meaning that each run should help the algorithm to search which combination is best to run in the following step. For this we are going to use 2 algorithms. Bayesian optimization and genetic algorithm.
-## The second part of the main goal is to look for a way of parallelizing the work, so more combinations could be running at the same time. For this we decided to use RAY, but it will be also implemented in aws batch jobs, in case there are trouble with ray.
+### The scope of this project is to look for a faster way of optimizing a trading strategy. Backtrader packege contains a module where given a range of values for each indicator, the strategy would run each possible combination. In this way, one can obtain the best combinations of parameters. BUT when there are more than few indicators, each with a range of different values, running ALL possible combinations is slow and expensie. This is way the main goal is divided in two parts. 
+### The first one is to look for a way of optimizing the way of running each combination, meaning that each run should help the algorithm to search which combination is best to run in the following step. For this we are going to use 2 algorithms. Bayesian optimization and genetic algorithm.
+### The second part of the main goal is to look for a way of parallelizing the work, so more combinations could be running at the same time. For this we decided to use RAY, but it will be also implemented in aws batch jobs, in case there is any trouble with ray.
 
 For optimizing a strategy:
 
